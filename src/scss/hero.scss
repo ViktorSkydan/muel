@@ -1,0 +1,51 @@
+.hero {
+  position: relative;
+  padding-top: toRem(106);
+
+  &__slide-img {
+    width: 100%;
+    max-height: 500px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  &__content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: toRem(10);
+    padding: toRem(16);
+    top: 40%;
+    width: 40%;
+    left: toRem(100);
+    text-transform: uppercase;
+    border-radius: toRem(8);
+    color: var(--text-secondary);
+    background-color: #5e544b7d;
+  }
+
+  &__title {
+    font-size: toRem(38);
+    font-weight: 700;
+    line-height: 125%;
+  }
+
+  &__text {
+    font-size: toRem(20);
+    font-weight: 600;
+  }
+
+  &__button {
+    position: absolute;
+    bottom: toRem(78);
+    margin-left: toRem(100);
+    z-index: 1;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+  }
+
+  &__button:hover {
+    color: var(--text-secondary);
+  }
+}

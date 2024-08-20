@@ -1,0 +1,137 @@
+.footer {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: toRem(35);
+    padding-bottom: toRem(35);
+    border-top: 1px solid var(--accent);
+    border-bottom: 1px solid var(--accent);
+  }
+
+  &__form-text {
+    font-weight: 600;
+    font-size: toRem(17);
+    margin-bottom: toRem(20);
+  }
+
+  .form {
+    .input {
+      margin-bottom: toRem(20);
+    }
+
+    .button {
+      width: 100%;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: toRem(10);
+  }
+
+  &__list-title {
+    font-weight: 600;
+    font-size: toRem(17);
+    margin-bottom: toRem(20);
+  }
+
+  &__item {
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: var(--text-accent);
+    }
+  }
+
+  &__social-title {
+    font-weight: 600;
+    font-size: toRem(17);
+    margin-bottom: toRem(20);
+  }
+
+  &__social-list {
+    display: flex;
+    gap: toRem(20);
+  }
+
+  &__social-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: toRem(41);
+    height: toRem(41);
+    border-radius: 50%;
+    margin-bottom: toRem(20);
+    background-color: var(--bg-secondary);
+    outline: 1px solid transparent;
+    box-shadow: 0px 0px 4px 1px transparent;
+    transition:
+      box-shadow 0.3s ease,
+      outline 0.3s ease;
+
+    &:hover {
+      box-shadow: 0px 0px 2px 1px var(--secondary);
+    }
+
+    &:focus {
+      box-shadow: 0px 0px 1px 0px;
+      outline: 1px solid var(--secondary);
+    }
+  }
+
+  .instagram {
+    background-image: url('@img/icons/icon-instagram.svg');
+  }
+
+  .facebook {
+    background-image: url('@img/icons/icon-facebook.svg');
+  }
+
+  .whatsapp {
+    background-image: url('@img/icons/icon-whatsapp.svg');
+  }
+
+  .tiktok {
+    background-image: url('@img/icons/icon-tiktok.svg');
+  }
+
+  .icon {
+    width: toRem(23);
+    height: toRem(23);
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(0) saturate(100%) invert(31%) sepia(27%) saturate(128%) hue-rotate(349deg)
+      brightness(100%) contrast(97%);
+  }
+
+  &__social-text {
+    font-size: toRem(13);
+    margin-bottom: toRem(20);
+  }
+
+  &__links {
+    font-weight: 600;
+
+    a {
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: var(--text-accent);
+    }
+
+    :not(:last-child) {
+      margin-right: toRem(20);
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    gap: toRem(30);
+    padding: toRem(10) toRem(0);
+    font-size: toRem(13);
+    color: var(--text-accent);
+  }
+}
